@@ -18,7 +18,8 @@ public class MarkovChainClass {
 
         System.out.print("읽을 파일 이름을 입력하시오(ex. harry.txt): ");
         MKCC.inputString = br.readLine();
-        MKCC.ReadFile(br);
+        if(!MKCC.ReadFile(br))
+            return;
         System.out.println("File Read.");
         //MKCC.PrintHashTable();  해쉬테이블 제대로 만들어졌는지 확인
         System.out.println("Markov Chain >>" + "\n");
@@ -26,8 +27,13 @@ public class MarkovChainClass {
 
 
     }
-    public void ReadFile(BufferedReader br) throws FileNotFoundException, IOException{
-        br = new BufferedReader(new FileReader(inputString));
+    public boolean ReadFile(BufferedReader br) throws IOException{
+        try {
+            br = new BufferedReader(new FileReader(inputString));
+        }catch(FileNotFoundException e) {
+            System.out.println("No such file exist.txt");
+            return false;
+        }
         boolean EOF = false;
         String key1 = null, key2 = null, suffix = null, token = null;
         String lineBuffer = br.readLine();
@@ -147,6 +153,7 @@ public class MarkovChainClass {
                 break;
         }
         //System.out.println("File Read.");
+        return true;
     }
     public void PrintHashTable(){
         System.out.println("Print HashTable");
