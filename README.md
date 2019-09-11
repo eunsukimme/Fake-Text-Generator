@@ -1,4 +1,4 @@
-# Fake-Text-Generator
+# Fake Text Generator
 
 마르코프 체인을 응용한 진짜같은 가짜 자연어 생성기 입니다.
 
