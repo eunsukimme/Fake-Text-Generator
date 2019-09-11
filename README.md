@@ -10,6 +10,7 @@
 
 - JDK >= 8 (recommended)
 - Command Line Tool(javac, java)
+- 충분히 긴 텍스트(.txt)
 
 ### Installation
 
@@ -81,7 +82,7 @@ _Show your flowcharts and conceal your tables and I will be
 mystified. Show your tables and your flowcharts will be
 obvious. [end]_\
 \
-먼저 **"연속된 두 단어의 쌍"**을 **prefix**라고 부르고, **“이어서 등장한 단어”**를 **suffix**라고 합시다. 위 텍스트에서 Prefix와 Suffix를 표로 정리하면 다음과 같습니다.
+먼저 "연속된 두 단어의 쌍"을 **prefix**라고 부르고, “이어서 등장한 단어”를 **suffix**라고 합시다. 위 텍스트에서 Prefix와 Suffix를 표로 정리하면 다음과 같습니다.
 
 | PREFIX          | SUFFIX                     |
 | --------------- | -------------------------- |
