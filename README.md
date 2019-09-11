@@ -64,6 +64,10 @@ slightly apart from Mr. Weasley. "Here, look." Mr. Diggory shout.
 (...생략)
 ```
 
+전체 결과는 아래 링크에서 확인할 수 있다\
+[harry.txt(영어)](./fake_harry.md)\
+[magicSchool.txt(한글)](./fake_magicSchool.md)
+
 ## How It Works
 
 텍스트에서 모든 **연속된 두 단어의 쌍**과 **그 쌍에 이어서 바로 등장한 단어**의 목록을 찾아냅니다. 해당 목록에서 동일한 확률로 임의의 단어를 선택하여 연결하고,
