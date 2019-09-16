@@ -2,9 +2,20 @@
 
 마르코프 체인을 응용한 진짜같은 가짜 자연어 생성기 입니다.
 
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [How It Works](#how-it-works)
+  - [Key Concept](#key-concept)
+  - [Process](#process)
+- [Building Blocks](#building-blocks)
+- [License](#license)
+
 ## Getting Started
 
-설치하고 실행하는 과정은 간단합니다. JAVA가 설치되어야 하며, 입력으로 주어질 긴 텍스트 파일이 필요합니다.
+설치하고 실행하는 과정은 간단합니다. JAVA가 설치되어야 하며, 입력으로 주어질 긴 텍스트 파일이 필요합니다. 이 때 입력으로 주어지는 텍스트 파일(.txt)에 포함된 문자들은 UNICODE 또는 ASCII 만 포함하여야 합니다.
 
 ### Requirements
 
@@ -180,10 +191,6 @@ Node *htable[NHASH]; // 해쉬 테이블
     return h % NHASH;
   }
 ```
-
-## Acknowledgments
-
-입력으로 주어지는 텍스트 파일(.txt)에 포함된 문자들은 UNICODE 또는 ASCII 만 포함하여야 합니다.
 
 ## License
 
